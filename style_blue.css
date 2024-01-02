@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@1,700&family=Roboto+Condensed:wght@300&family=Rubik+Maps&family=Ubuntu:ital,wght@1,300&display=swap');
+*{  padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("bg-blue.jpg");
+    background-size: cover;
+    overflow: visible;
+}
+
+.logo {
+    background-color: darkblue;
+    text-align: center;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik Maps', sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.logo h1::before{
+    content :"";
+    position: absolute;
+    height: 3px;
+    background-color: rgba(10, 128, 225, 0.511);
+    bottom: 14px;
+    left: 48%;
+    transform: translateX(-50%);
+    animation: animateUnderline 4s linear infinite;
+}
+
+@keyframes animateUnderline {
+    0%{
+        width: 0px;
+    }
+    50%{
+        width: 250px;
+    }
+    100%{
+        width: 0px;
+    }
+}
+
+.tiny-box {
+    background-color: white;
+    position: relative;
+    z-index: -1;
+    height: 30px;
+    width: 80px;
+    right: 76px;
+    border-radius: 5px;
+}
+
+.top-part {
+    color: rgb(253, 3, 186);
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.nav {
+    background-color: rgba(0, 21, 255, 0.737);
+}
+
+ul {
+    display: flex inline;
+    height: 8vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.589);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+a:hover {
+    color: black;
+    font-weight: 900;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 3px;
+    color: rgba(0, 0, 0, 0.779);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    background: rgba(0, 76, 255, 0.511);
+    border: 2px solid rgba(0, 0, 0, 0.769);
+    border-radius: 7px;
+}
+
+.btn:hover {
+    color: black;
+    border-color: black;
+    font-weight: 900;
+    width: 110px;
+    height: 40px;
+}
+
+h2{
+    display: inline-block;
+    color: rgb(255, 0, 242);
+    text-align: center;
+    padding-left: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: underline ;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.container {
+    border: 3px solid rgb(255, 0, 251);
+    min-height: 73vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: white;
+    height: 250px;
+    width: 400px;
+    margin-inline: 25px;
+    border: 2px solid #00008b;
+    border-radius: 10px;
+}
+
+.box:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: 0.6s ;
+}
+
+img{
+    border-radius:8px ;
+}
+
+img:hover{
+    transition:  0.6s ;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: rgba(5, 42, 164, 0.598);
+    color: white;
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+.bottom-part{
+    position: relative;
+    top: 30%;
+    font-weight: 700;
+}
+.socialmedia{
+    position: relative;
+    left: 18%;
+}
+.socialmedia i{
+    font-size: x-large;
+    color: aliceblue;
+}
+.socialmedia i:hover{
+    transform: scale(1.1);
+}
